@@ -1,0 +1,125 @@
+{
+    "os": "Linux-5.15.0-139-generic-x86_64-with-glibc2.10",
+    "python": "3.8.0",
+    "heartbeatAt": "2025-10-07T20:18:17.185526",
+    "startedAt": "2025-10-07T20:18:16.658013",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "scripts/train_dribbling.py",
+    "codePath": "scripts/train_dribbling.py",
+    "git": {
+        "remote": "https://github.com/Improbable-AI/dribblebot",
+        "commit": "8e743ac3ee14038bd48af3cde1b72eef03f881d0"
+    },
+    "email": null,
+    "root": "/home/armaan/dribblebot",
+    "host": "armaan-ubuntu",
+    "username": "armaan",
+    "executable": "/home/armaan/miniconda3/envs/dribblebot/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3004.7470625,
+        "min": 3000.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3396.718,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "total": 296.0854835510254,
+        "used": 59.12108612060547
+    },
+    "gpu": "NVIDIA GeForce RTX 4070 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070 Ti",
+            "memory_total": 12878610432
+        }
+    ],
+    "memory": {
+        "total": 30.45960235595703
+    }
+}

@@ -1,0 +1,45 @@
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:71: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.height_samples = torch.tensor(self.terrain_cell_heights).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:258: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.friction_samples = torch.tensor(self.terrain_cell_frictions).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:261: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.roughness_samples = torch.tensor(self.terrain_cell_roughnesses).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:331: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.friction_samples = torch.tensor(self.terrain_cell_frictions).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:334: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.roughness_samples = torch.tensor(self.terrain_cell_roughnesses).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:337: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.restitution_samples = torch.tensor(self.terrain_cell_restitutions).view(self.env.cfg.terrain.num_rows,
+Traceback (most recent call last):
+  File "scripts/train_dribbling.py", line 302, in <module>
+    train_go1(headless=False)
+  File "scripts/train_dribbling.py", line 291, in train_go1
+    runner = Runner(env, device=device)
+  File "/home/armaan/dribblebot/dribblebot_learn/ppo_cse/__init__.py", line 91, in __init__
+    actor_critic.load_state_dict(torch.load(body.name))
+AttributeError: 'NoneType' object has no attribute 'name'
+Adaptation Module: Sequential(
+  (0): Linear(in_features=1125, out_features=256, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=256, out_features=128, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=128, out_features=6, bias=True)
+)
+Actor MLP: Sequential(
+  (0): Linear(in_features=1131, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=12, bias=True)
+)
+Critic MLP: Sequential(
+  (0): Linear(in_features=1131, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)

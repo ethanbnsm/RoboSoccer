@@ -1,0 +1,205 @@
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:71: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.height_samples = torch.tensor(self.terrain_cell_heights).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:258: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.friction_samples = torch.tensor(self.terrain_cell_frictions).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:261: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.roughness_samples = torch.tensor(self.terrain_cell_roughnesses).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:331: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.friction_samples = torch.tensor(self.terrain_cell_frictions).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:334: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.roughness_samples = torch.tensor(self.terrain_cell_roughnesses).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:337: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.restitution_samples = torch.tensor(self.terrain_cell_restitutions).view(self.env.cfg.terrain.num_rows,
+[32m13:18:32 INFO: This is wandb-osh v1.2.2 using communication directory /home/armaan/.wandb_osh_command_dir
+Adaptation Module: Sequential(
+  (0): Linear(in_features=1125, out_features=256, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=256, out_features=128, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=128, out_features=6, bias=True)
+)
+Actor MLP: Sequential(
+  (0): Linear(in_features=1131, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=12, bias=True)
+)
+Critic MLP: Sequential(
+  (0): Linear(in_features=1131, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)
+[⚠️ Warning] resume is True, but checkpoint or path not provided.
+START RECORDING
+Saving model at iteration 0
+[33m13:18:37 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:18:40 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:18:43 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:18:46 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:18:49 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:18:52 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:18:54 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:18:57 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:00 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:03 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:06 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:09 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:12 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:15 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:17 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:20 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:23 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:26 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:29 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:32 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:35 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:38 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:41 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:43 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:46 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:49 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:52 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:54 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:19:57 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:00 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:03 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:06 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:08 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:11 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:14 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:17 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:20 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:23 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:26 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:29 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:32 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:35 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:38 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:41 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:44 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:47 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:50 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:53 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:56 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:20:59 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:02 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:05 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:08 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:11 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:14 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:17 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:19 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:22 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:25 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:28 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:31 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:34 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:38 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:41 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:44 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:47 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:51 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:54 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:21:57 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:00 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:03 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:07 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:10 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:13 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:17 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:20 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:23 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:27 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:30 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:33 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:36 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:40 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:43 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:46 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:49 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:53 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:56 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:22:59 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:02 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:06 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:09 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:12 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:15 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:19 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:22 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:25 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:28 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:31 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:34 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:37 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:40 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:44 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:47 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:50 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:53 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:56 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:23:59 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:02 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:05 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:08 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:11 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:14 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:17 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:20 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:24 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:27 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:30 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:33 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:36 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:39 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:42 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:45 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:48 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:51 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:55 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:24:58 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:01 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:04 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:07 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:10 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:13 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:16 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:19 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:23 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:26 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:29 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:32 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:36 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:39 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:42 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:45 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:48 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:51 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:54 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+[33m13:25:57 WARNING: Syncing not active or too slow: Command /home/armaan/.wandb_osh_command_dir/35e2c4.command file still exists
+LOGGING VIDEO
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m wandb.Video requires moviepy and imageio when passing raw data.  Install with "pip install moviepy imageio"
+Traceback (most recent call last):
+  File "scripts/train_dribbling.py", line 302, in <module>
+    train_go1(headless=False)
+  File "scripts/train_dribbling.py", line 292, in train_go1
+    runner.learn(num_learning_iterations=1000000, init_at_random_ep_len=True, eval_freq=100)
+  File "/home/armaan/dribblebot/dribblebot_learn/ppo_cse/__init__.py", line 198, in learn
+    self.log_video(it)
+  File "/home/armaan/dribblebot/dribblebot_learn/ppo_cse/__init__.py", line 271, in log_video
+    wandb.log({"video": wandb.Video(video_array, fps=1 / self.env.dt)}, step=it)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/sdk/data_types/video.py", line 127, in __init__
+    self.encode()
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/sdk/data_types/video.py", line 130, in encode
+    mpy = util.get_module(
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/util.py", line 243, in get_module
+    raise wandb.Error(required)
+wandb.errors.Error: wandb.Video requires moviepy and imageio when passing raw data.  Install with "pip install moviepy imageio"
+(2002, 4, 240, 360)

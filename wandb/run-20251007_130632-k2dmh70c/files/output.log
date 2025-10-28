@@ -1,0 +1,69 @@
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:71: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.height_samples = torch.tensor(self.terrain_cell_heights).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:258: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.friction_samples = torch.tensor(self.terrain_cell_frictions).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:261: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.roughness_samples = torch.tensor(self.terrain_cell_roughnesses).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:331: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.friction_samples = torch.tensor(self.terrain_cell_frictions).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:334: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.roughness_samples = torch.tensor(self.terrain_cell_roughnesses).view(self.env.cfg.terrain.num_rows,
+/home/armaan/dribblebot/dribblebot/terrains/tm_box_terrain.py:337: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.restitution_samples = torch.tensor(self.terrain_cell_restitutions).view(self.env.cfg.terrain.num_rows,
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Could not find run <Run improbableailab/dribbling/j34kr9ds (not found)>
+Traceback (most recent call last):
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/public.py", line 880, in run
+    self._runs[path] = Run(self.client, entity, project, run_id)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/public.py", line 1720, in __init__
+    self.load(force=not _attrs)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/public.py", line 1824, in load
+    raise ValueError("Could not find run %s" % self)
+ValueError: Could not find run <Run improbableailab/dribbling/j34kr9ds (not found)>
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "scripts/train_dribbling.py", line 302, in <module>
+    train_go1(headless=False)
+  File "scripts/train_dribbling.py", line 291, in train_go1
+    runner = Runner(env, device=device)
+  File "/home/armaan/dribblebot/dribblebot_learn/ppo_cse/__init__.py", line 81, in __init__
+    body = wandb.restore(RunnerArgs.resume_checkpoint, run_path=RunnerArgs.resume_path)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 3681, in restore
+    api_run = api.run(run_path)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/public.py", line 880, in run
+    self._runs[path] = Run(self.client, entity, project, run_id)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/public.py", line 1720, in __init__
+    self.load(force=not _attrs)
+  File "/home/armaan/miniconda3/envs/dribblebot/lib/python3.8/site-packages/wandb/apis/public.py", line 1824, in load
+    raise ValueError("Could not find run %s" % self)
+wandb.errors.CommError: Could not find run <Run improbableailab/dribbling/j34kr9ds (not found)>
+Adaptation Module: Sequential(
+  (0): Linear(in_features=1125, out_features=256, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=256, out_features=128, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=128, out_features=6, bias=True)
+)
+Actor MLP: Sequential(
+  (0): Linear(in_features=1131, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=12, bias=True)
+)
+Critic MLP: Sequential(
+  (0): Linear(in_features=1131, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)
