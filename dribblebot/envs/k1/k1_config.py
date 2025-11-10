@@ -5,32 +5,31 @@ from params_proto import Meta
 from dribblebot.envs.base.legged_robot_config import Cfg
 
 
-def config_go1(Cnfg: Union[Cfg, Meta]):
+def config_k1(Cnfg: Union[Cfg, Meta]):
     _ = Cnfg.init_state
 
-    _.pos = [0.0, 0.0, 0.34]  # x,y,z [m]
-    _.default_joint_angles = {  # = target angles [rad] when action = 0.0
-        'FL_hip_joint': 0.1,  # [rad]
-        'RL_hip_joint': 0.1,  # [rad]
-        'FR_hip_joint': -0.1,  # [rad]
-        'RR_hip_joint': -0.1,  # [rad]
+    _.pos = [0.0, 0.0, 0.9]  # x,y,z [m]
+    _.default_joint_angles = {
+        "Left_Hip_Yaw": 0.0,
+        "Left_Hip_Roll": 0.0,
+        "Left_Hip_Pitch": -0.35,
+        "Left_Knee_Pitch": 0.70,
+        "Left_Ankle_Pitch": -0.35,
+        "Left_Ankle_Roll": 0.0,
 
-        'FL_thigh_joint': 0.8,  # [rad]
-        'RL_thigh_joint': 1.,  # [rad]
-        'FR_thigh_joint': 0.8,  # [rad]
-        'RR_thigh_joint': 1.,  # [rad]
+        "Right_Hip_Yaw": 0.0,
+        "Right_Hip_Roll": 0.0,
+        "Right_Hip_Pitch": -0.35,
+        "Right_Knee_Pitch": 0.70,
+        "Right_Ankle_Pitch": -0.35,
+        "Right_Ankle_Roll": 0.0
+}
 
-        'FL_calf_joint': -1.5,  # [rad]
-        'RL_calf_joint': -1.5,  # [rad]
-        'FR_calf_joint': -1.5,  # [rad]
-        'RR_calf_joint': -1.5  # [rad]
-    }
 
     _ = Cnfg.control
     _.control_type = 'P'
-    _.stiffness = {'joint': 20.}  # [N*m/rad]
-    _.damping = {'joint': 0.5}  # [N*m*s/rad]
-    # action scale: target angle = actionScale * action + defaultAngle
+    _.stiffness = {'joint': 30.}
+    _.damping = {'joint': 1.0}
     _.action_scale = 0.25
     _.hip_scale_reduction = 0.5
     # decimation: Number of control action updates @ sim DT per policy DT
@@ -38,16 +37,17 @@ def config_go1(Cnfg: Union[Cfg, Meta]):
 
     _ = Cnfg.asset
     _.file = '{MINI_GYM_ROOT_DIR}/resources/robots/k1/urdf/k1.urdf'
-    _.foot_name = "foot"
-    _.penalize_contacts_on = ["thigh", "calf"]
-    _.terminate_after_contacts_on = ["base"]
+    _.foot_name = "foot_link"
+    _.penalize_contacts_on = ["Shank"]
+    _.terminate_after_contacts_on = ["Trunk"]
     _.self_collisions = 0  # 1 to disable, 0 to enable...bitwise filter
     _.flip_visual_attachments = False
     _.fix_base_link = False
 
     _ = Cnfg.rewards
     _.soft_dof_pos_limit = 0.9
-    _.base_height_target = 0.34
+    _.base_height_target = 0.9
+
 
     _ = Cnfg.reward_scales
     _.torques = -0.0001
