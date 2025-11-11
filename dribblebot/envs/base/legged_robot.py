@@ -354,7 +354,10 @@ class LeggedRobot(BaseTask):
         # aggregate the privileged observations
         for sensor in self.privileged_sensors:
             self.privileged_obs_buf += [sensor.get_observation()]
-        self.privileged_obs_buf = torch.reshape(torch.cat(self.privileged_obs_buf, dim=-1), (self.num_envs, -1))
+        if len(self.privileged_obs_buf) > 0:
+            self.privileged_obs_buf = torch.reshape(torch.cat(self.privileged_obs_buf, dim=-1), (self.num_envs, -1))
+        else:
+            self.privileged_obs_buf = None
         # add noise if needed
         if self.cfg.noise.add_noise:
             self.obs_buf += (2 * torch.rand_like(self.obs_buf) - 1) * self.noise_scale_vec
@@ -516,11 +519,10 @@ class LeggedRobot(BaseTask):
     def refresh_actor_rigid_shape_props(self, env_ids, cfg):
         for env_id in env_ids:
             rigid_shape_props = self.gym.get_actor_rigid_shape_properties(self.envs[env_id], 0)
-
-            for i in range(self.num_dof):
+            num_shapes = len(rigid_shape_props)
+            for i in range(num_shapes):
                 rigid_shape_props[i].friction = self.friction_coeffs[env_id, 0]
                 rigid_shape_props[i].restitution = self.restitutions[env_id, 0]
-
             self.gym.set_actor_rigid_shape_properties(self.envs[env_id], 0, rigid_shape_props)
 
     def _randomize_dof_props(self, env_ids, cfg):

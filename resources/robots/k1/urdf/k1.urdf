@@ -38,7 +38,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Trunk.STL" />
+          filename="resources/robots/k1/meshes/Trunk.STL" />
       </geometry>
       <material
         name="">
@@ -85,7 +85,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Head_1.STL" />
+          filename="resources/robots/k1/meshes/Head_1.STL" />
       </geometry>
       <material
         name="">
@@ -99,7 +99,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Head_1.STL" />
+          filename="resources/robots/k1/meshes/Head_1.STL" />
       </geometry>
     </collision>
   </link>
@@ -144,7 +144,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Head_2.STL" />
+          filename="resources/robots/k1/meshes/Head_2.STL" />
       </geometry>
       <material
         name="">
@@ -158,7 +158,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Head_2.STL" />
+          filename="resources/robots/k1/meshes/Head_2.STL" />
       </geometry>
     </collision>
   </link>
@@ -203,7 +203,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Arm_1.STL" />
+          filename="resources/robots/k1/meshes/Left_Arm_1.STL" />
       </geometry>
       <material
         name="">
@@ -253,7 +253,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Arm_2.STL" />
+          filename="resources/robots/k1/meshes/Left_Arm_2.STL" />
       </geometry>
       <material
         name="">
@@ -311,7 +311,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Arm_3.STL" />
+          filename="resources/robots/k1/meshes/Left_Arm_3.STL" />
       </geometry>
       <material
         name="">
@@ -325,7 +325,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Arm_3.STL" />
+          filename="resources/robots/k1/meshes/Left_Arm_3.STL" />
       </geometry>
     </collision>
   </link>
@@ -370,7 +370,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Arm_4.STL" />
+          filename="resources/robots/k1/meshes/Left_Arm_4.STL" />
       </geometry>
       <material
         name="">
@@ -384,7 +384,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Arm_4.STL" />
+          filename="resources/robots/k1/meshes/Left_Arm_4.STL" />
       </geometry>
     </collision>
   </link>
@@ -482,7 +482,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Arm_1.STL" />
+          filename="resources/robots/k1/meshes/Right_Arm_1.STL" />
       </geometry>
       <material
         name="">
@@ -532,7 +532,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Arm_2.STL" />
+          filename="resources/robots/k1/meshes/Right_Arm_2.STL" />
       </geometry>
       <material
         name="">
@@ -590,7 +590,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Arm_3.STL" />
+          filename="resources/robots/k1/meshes/Right_Arm_3.STL" />
       </geometry>
       <material
         name="">
@@ -604,7 +604,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Arm_3.STL" />
+          filename="resources/robots/k1/meshes/Right_Arm_3.STL" />
       </geometry>
     </collision>
   </link>
@@ -649,7 +649,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Arm_4.STL" />
+          filename="resources/robots/k1/meshes/Right_Arm_4.STL" />
       </geometry>
       <material
         name="">
@@ -663,7 +663,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Arm_4.STL" />
+          filename="resources/robots/k1/meshes/Right_Arm_4.STL" />
       </geometry>
     </collision>
   </link>
@@ -761,7 +761,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Hip_Pitch.STL" />
+          filename="resources/robots/k1/meshes/Left_Hip_Pitch.STL" />
       </geometry>
       <material
         name="">
@@ -811,7 +811,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Hip_Roll.STL" />
+          filename="resources/robots/k1/meshes/Left_Hip_Roll.STL" />
       </geometry>
       <material
         name="">
@@ -869,7 +869,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Hip_Yaw.STL" />
+          filename="resources/robots/k1/meshes/Left_Hip_Yaw.STL" />
       </geometry>
       <material
         name="">
@@ -927,7 +927,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Shank.STL" />
+          filename="resources/robots/k1/meshes/Left_Shank.STL" />
       </geometry>
       <material
         name="">
@@ -993,7 +993,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Ankle_Cross.STL" />
+          filename="resources/robots/k1/meshes/Left_Ankle_Cross.STL" />
       </geometry>
       <material
         name="">
@@ -1043,7 +1043,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Foot.STL" />
+          filename="resources/robots/k1/meshes/Left_Foot.STL" />
       </geometry>
       <material
         name="">
@@ -1057,7 +1057,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Left_Foot.STL" />
+          filename="resources/robots/k1/meshes/Left_Foot.STL" />
       </geometry>
     </collision>
   </link>
@@ -1103,7 +1103,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Hip_Pitch.STL" />
+          filename="resources/robots/k1/meshes/Right_Hip_Pitch.STL" />
       </geometry>
       <material
         name="">
@@ -1153,7 +1153,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Hip_Roll.STL" />
+          filename="resources/robots/k1/meshes/Right_Hip_Roll.STL" />
       </geometry>
       <material
         name="">
@@ -1211,7 +1211,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Hip_Yaw.STL" />
+          filename="resources/robots/k1/meshes/Right_Hip_Yaw.STL" />
       </geometry>
       <material
         name="">
@@ -1269,7 +1269,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Shank.STL" />
+          filename="resources/robots/k1/meshes/Right_Shank.STL" />
       </geometry>
       <material
         name="">
@@ -1335,7 +1335,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Ankle_Cross.STL" />
+          filename="resources/robots/k1/meshes/Right_Ankle_Cross.STL" />
       </geometry>
       <material
         name="">
@@ -1385,7 +1385,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Foot.STL" />
+          filename="resources/robots/k1/meshes/Right_Foot.STL" />
       </geometry>
       <material
         name="">
@@ -1399,7 +1399,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/Right_Foot.STL" />
+          filename="resources/robots/k1/meshes/Right_Foot.STL" />
       </geometry>
     </collision>
   </link>

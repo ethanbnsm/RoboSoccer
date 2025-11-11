@@ -10,6 +10,23 @@ def config_k1(Cnfg: Union[Cfg, Meta]):
 
     _.pos = [0.0, 0.0, 0.9]  # x,y,z [m]
     _.default_joint_angles = {
+        # Head and neck
+        "AAHead_yaw": 0.0,
+        "Head_pitch": 0.0,
+        
+        # Left arm
+        "ALeft_Shoulder_Pitch": 0.0,
+        "Left_Shoulder_Roll": 0.0,
+        "Left_Elbow_Pitch": 0.0,
+        "Left_Elbow_Yaw": 0.0,
+        
+        # Right arm
+        "ARight_Shoulder_Pitch": 0.0,
+        "Right_Shoulder_Roll": 0.0,
+        "Right_Elbow_Pitch": 0.0,
+        "Right_Elbow_Yaw": 0.0,
+        
+        # Left leg
         "Left_Hip_Yaw": 0.0,
         "Left_Hip_Roll": 0.0,
         "Left_Hip_Pitch": -0.35,
@@ -17,6 +34,7 @@ def config_k1(Cnfg: Union[Cfg, Meta]):
         "Left_Ankle_Pitch": -0.35,
         "Left_Ankle_Roll": 0.0,
 
+        # Right leg
         "Right_Hip_Yaw": 0.0,
         "Right_Hip_Roll": 0.0,
         "Right_Hip_Pitch": -0.35,
@@ -67,10 +85,11 @@ def config_k1(Cnfg: Union[Cfg, Meta]):
     _.curriculum = False
 
     _ = Cnfg.env
-    _.num_observations = 42
+    _.num_observations = 65
     _.num_envs = 4000
 
     _ = Cnfg.commands
+    _.num_commands = 10  # lin_vel_x, lin_vel_y, ang_vel_yaw, body_height, freq, phase, offset, bound, duration, footswing_height
     _.lin_vel_x = [-1.0, 1.0]
     _.lin_vel_y = [-1.0, 1.0]
 
@@ -78,11 +97,59 @@ def config_k1(Cnfg: Union[Cfg, Meta]):
     _.heading_command = False
     _.resampling_time = 10.0
     _.command_curriculum = True
+    _.num_commands = 10
     _.num_lin_vel_bins = 30
     _.num_ang_vel_bins = 30
     _.lin_vel_x = [-0.6, 0.6]
     _.lin_vel_y = [-0.6, 0.6]
     _.ang_vel_yaw = [-1, 1]
+    _.body_height_cmd = [0.0, 0.0]
+    _.gait_frequency_cmd_range = [2.0, 2.0]
+    _.gait_phase_cmd_range = [0.0, 0.0]
+    _.gait_offset_cmd_range = [0.0, 0.0]
+    _.gait_bound_cmd_range = [0.0, 0.0]
+    _.gait_duration_cmd_range = [0.5, 0.5]
+    _.footswing_height_range = [0.06, 0.06]
+    
+    # Curriculum settings
+    _.num_bins_vel_x = 30
+    _.num_bins_vel_y = 30
+    _.num_bins_vel_yaw = 30
+    _.num_bins_body_height = 1
+    _.num_bins_gait_frequency = 1
+    _.num_bins_gait_phase = 1
+    _.num_bins_gait_offset = 1
+    _.num_bins_gait_bound = 1
+    _.num_bins_gait_duration = 1
+    _.num_bins_footswing_height = 1
+    _.num_bins_body_pitch = 1
+    _.num_bins_body_roll = 1
+    _.num_bins_aux_reward_coef = 1
+    _.num_bins_compliance = 1
+    _.num_bins_stance_width = 1
+    _.num_bins_stance_length = 1
+    
+    # For K1, we don't use gaits, so set these to minimal ranges
+    _.limit_vel_x = [-0.6, 0.6]
+    _.limit_vel_y = [-0.6, 0.6]
+    _.limit_vel_yaw = [-1, 1]
+    _.limit_body_height = [0.0, 0.0]
+    _.limit_gait_phase = [0.0, 0.0]
+    _.limit_gait_offset = [0.0, 0.0]
+    _.limit_gait_bound = [0.0, 0.0]
+    _.limit_gait_frequency = [2.0, 2.0]
+    _.limit_gait_duration = [0.5, 0.5]
+    _.limit_footswing_height = [0.06, 0.06]
+    _.limit_body_pitch = [0.0, 0.0]
+    _.limit_body_roll = [0.0, 0.0]
+    _.limit_aux_reward_coef = [0.0, 0.0]
+    _.limit_compliance = [0.0, 0.0]
+    _.limit_stance_width = [0.0, 0.0]
+    _.limit_stance_length = [0.0, 0.0]
+    _.gaitwise_curricula = False
+    _.exclusive_phase_offset = False
+    _.balance_gait_distribution = False
+    _.binary_phases = False
 
     _ = Cnfg.domain_rand
     _.randomize_base_mass = True
