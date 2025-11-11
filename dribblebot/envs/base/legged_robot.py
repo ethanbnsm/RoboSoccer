@@ -1293,10 +1293,29 @@ class LeggedRobot(BaseTask):
         """ Prepares a list of reward functions, whcih will be called to compute the total reward.
             Looks for self._reward_<REWARD_NAME>, where <REWARD_NAME> are names of all non zero reward scales in the cfg.
         """
-        # reward containers
+        # reward containers - dynamically select based on robot type
         from dribblebot.rewards.soccer_rewards import SoccerRewards
-        reward_containers = { "SoccerRewards": SoccerRewards}
-        self.reward_container = reward_containers[self.cfg.rewards.reward_container_name](self)
+        from dribblebot.rewards.go1_soccer_rewards import Go1SoccerRewards
+        from dribblebot.rewards.k1_soccer_rewards import K1SoccerRewards
+        
+        reward_containers = {
+            "SoccerRewards": SoccerRewards,
+            "Go1SoccerRewards": Go1SoccerRewards,
+            "K1SoccerRewards": K1SoccerRewards,
+        }
+        
+        # If using default SoccerRewards, select robot-specific subclass
+        if self.cfg.rewards.reward_container_name == "SoccerRewards":
+            if self.cfg.robot.name == "go1":
+                reward_container_cls = Go1SoccerRewards
+            elif self.cfg.robot.name == "k1":
+                reward_container_cls = K1SoccerRewards
+            else:
+                reward_container_cls = SoccerRewards
+        else:
+            reward_container_cls = reward_containers[self.cfg.rewards.reward_container_name]
+        
+        self.reward_container = reward_container_cls(self)
 
         # remove zero scales + multiply non-zero ones by dt
         for key in list(self.reward_scales.keys()):
@@ -1336,9 +1355,11 @@ class LeggedRobot(BaseTask):
 
         # create robot
         from dribblebot.robots.go1 import Go1
+        from dribblebot.robots.k1 import K1
 
         robot_classes = {
             'go1': Go1,
+            'k1': K1,
         }
 
         self.robot = robot_classes[self.cfg.robot.name](self)
